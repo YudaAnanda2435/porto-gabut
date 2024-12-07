@@ -1,0 +1,116 @@
+/* .rotate {
+  animation: spin 5s linear infinite; 
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(360deg); 
+  }
+} */
+.hidden {
+  display: none;
+}
+.block {
+  display: block;
+}
+
+
+
+.h-8,
+.shadow-inner {
+  position: relative;
+  border: 2px solid transparent; /* Awalnya border transparan */
+  border-radius: 12px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom right, #ffff, #0a5eb0); /* Gradient baru */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: glow 4s infinite; /* Animasi berulang */
+}
+
+@keyframes glow {
+  0% {
+    border-color: transparent; /* Border tidak terlihat */
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0); /* Shadow hilang */
+  }
+  50% {
+    border-color: #222831; /* Warna bagian dari gradient */
+    box-shadow: 0 0 10px rgba(88, 85, 112, 0.8), 0 0 20px rgba(27, 24, 51, 0.8); /* Shadow sesuai warna gradient */
+  }
+  100% {
+    border-color: transparent; /* Border kembali menghilang */
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0); /* Shadow hilang */
+  }
+}
+
+
+.snake-border,
+.max-w-full {
+  position: relative;
+  border: 4px solid transparent; /* Transparan awal */
+  border-radius: 12px; /* Membuat sudut melengkung */
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #ff0000, #00ff00, #0000ff, #ff0000);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: snake 4s infinite; /* Animasi berjalan terus-menerus */
+}
+
+@keyframes snake {
+  0% {
+    background-size: 200% 200%; /* Gradient besar awal */
+    background-position: 100% 0%; /* Gradient mulai di kanan */
+  }
+  50% {
+    background-size: 200% 200%; /* Ukuran tetap */
+    background-position: 0% 100%; /* Gradient bergerak melingkar ke bawah kiri */
+  }
+  100% {
+    background-size: 200% 200%; /* Ukuran tetap */
+    background-position: 100% 0%; /* Gradient kembali ke posisi awal */
+  }
+}
+
+.snake-border::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 4px solid transparent;
+  background-image: linear-gradient(to right, transparent, transparent);
+  animation: disappear 6s infinite;
+}
+
+@keyframes disappear {
+  0%,
+  70% {
+    opacity: 1; /* Cahaya ular terlihat */
+  }
+  100% {
+    opacity: 0; /* Cahaya ular menghilang */
+  }
+}
+
+.awesome {
+  color: #ffc107; /* Warna awal */
+  animation: glow 5s infinite; /* Animasi menyala setiap 3 detik */
+}
+
+@keyframes glow {
+  0%, 100% {
+    color: #b3a529; /* Warna awal */
+    text-shadow: 0 0 5px #fff3cd;
+    transform: scale(1); /* Ukuran default */
+  }
+  50% {
+    color: #ffd451; /* Warna lebih terang */
+    text-shadow: 0 0 20px #665e18, 0 0 10px #665e18;
+    transform: scale(1); /* Sedikit diperbesar */
+  }
+}
+
+
+

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@300..700&family=Concert+One&family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="../style/style.css" />
+    <style>
+      .gradient {
+        background-image: linear-gradient(
+          to bottom right,
+          #181c14,
+          #222831,
+          #5c5470,
+          #1b1833
+        );
+      }
+      .line {
+        background-color: #3a6d8c;
+      }
+      .dasar {
+        background-color: #1b1833;
+      }
+      .gradientSkill {
+        background-image: linear-gradient(to bottom right, #1b1833, #3a6d8c);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="w-full mx-auto px-4 gradientSkill fixed z-10">
+     <nav class="flex flex-wrap p-6 justify-between">
+  <div class="flex flex-shrink-0 mr-6">
+    <img
+      class="h-8 w-24 w-50 mr-4 m-auto rounded-tl-lg rounded-br-lg"
+      src="../image/logo2.gif"
+      alt=""
+    />
+  </div>
+  <div class="block lg:hidden">
+    <button
+      id="menu-toggle"
+      class="flex items-center px-4 py-2 rounded border border-2-white text-indigo-500 hover:text-white"
+    >
+      <svg
+        class="block size-6 text-white "
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path 
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    id="menu-content"
+    class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto"
+  >
+    <div class="text-sm lg:flex-grow">
+      <a
+        href="#about"
+        class="block mt-4 lg:inline-block lg:mt-0 text-white opacity-50% hover:text-gray-900 text-lg mr-6"
+        >About me</a
+      >
+      <a
+        href="#skill"
+        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-900 text-lg mr-6"
+        >Skill Framework</a
+      >
+      <a
+        href="#recent"
+        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-900 text-lg mr-6"
+        >Recent Work</a
+      >
+      <a
+        href="#contact"
+        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-900 text-lg mr-6"
+        >Contact me</a
+      >
+    </div>
+    <div>
+      <a
+        href="#"
+        class="inline-block text-sm px-4 py-2 rounded-tl-lg rounded-br-lg text-white border-2 border-white hover:border-transparent hover:bg-gray-900 mt-4 lg:mt-0"
+        >Download CV</a
+      >
+    </div>
+  </div>
+</nav>
+
+    </section>
+
+    <section id="about" class="w-secreen mx-auto py-4 pt-32 dasar">
+      <div
+        class="px-12 py-8 m-auto text-justify text-white text-center md:text-center max-w-4xl"
+      >
+        <h1 class="w-full text-5xl font-bold pb-3">About me</h1>
+        <div class="mb-4">
+          <div
+            class="w-1/2 opacity-75 rounded h-1 mx-auto md:w-1/4"
+            gradientSkill
+          ></div>
+        </div>
+        <h2 class="text-3xl font-bold mb-2">
+          Hai, Saya Yuda, Senang berjumpa dengan anda.
+        </h2>
+
+        <h3 class="text-lg mb-2">
+          saya seorang programer dan juga analis, selain dapat membuat aplikasi
+          menggunakan bahasa pemrograman, saya juga bisa merancang suatu sistem
+          yang dibutuhkan user
+        </h3>
+        <div class="w-full">
+          <div class="px-4 pt-12">
+            <div class="rotate">
+              <img
+                src="../image/hacker.jpg"
+                class="snake-border shadow-inner rounded-full max-w-full mx-auto text-center w-48"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  box portofolio -->
+      <div
+        class="grid grid-cols-1 m-auto md:grid-cols-3 bg-gray-900 py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg text-center"
+      >
+        <div
+          class="card shadow-lg px-4 rounded-tl-lg rounded-br-lg py-4 m-3 gradientSkill"
+        >
+          <i class="awesome fa-solid text-yellow-500 fa-user-secret fa-5x"></i>
+          <div class="p-4 text-center">
+            <p class="font-bold text-white text-lg md:text-xl mb-6">
+              Programming
+            </p>
+            <p class="text-white text-base mb-2">PHP</p>
+            <hr class="text-white mb-2" />
+            <p class="text-white text-base mb-2">Hacking</p>
+            <hr class="text-white mb-2" />
+            <p class="text-white text-base mb-2">Python</p>
+            <hr class="text-white mb-2" />
+            <p class="text-white text-base mb-2">C++</p>
+            <hr class="text-white mb-2" />
+          </div>
+          <div
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 shadow-md rounded-tl-lg rounded-br-lg cursor-pointer"
+          >
+            Lihat Portofolio
+          </div>
+        </div>
+        <div
+          class="shadow-lg px-4 rounded-tl-lg rounded-br-lg py-4 m-3 gradientSkill"
+        >
+          <i
+            class="awesome awesome fa-brands fa-web-awesome fa-5x text-yellow-500"
+          ></i>
+          <div class="p-4 text-center">
+            <p class="font-bold text-white text-lg md:text-xl mb-6">
+              Programming
+            </p>
+            <p class="text-white text-base mb-2">PHP</p>
+            <hr class="text-white mb-2" />
+            <p class="text-white text-base mb-2">Hacking</p>
+            <hr class="text-white mb-2" />
+            <p class="text-white text-base mb-2">Python</p>
+            <hr class="text-white mb-2" />
+            <p class="text-white text-base mb-2">C++</p>
+            <hr class="text-white mb-2" />
+          </div>
+          <div
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 shadow-md rounded-tl-lg rounded-br-lg cursor-pointer"
+          >
+            Lihat Portofolio
+          </div>
+        </div>
+        <div
+          class="shadow-lg px-4 rounded-tl-lg rounded-br-lg py-4 m-3 gradientSkill"
+        >
+          <i class="awesome fa-solid fa-desktop fa-5x text-yellow-500"></i>
+          <div class="p-4 text-center">
+            <p class="font-bold text-white text-lg md:text-xl mb-6">
+              Programming
+            </p>
+            <p class="text-white text-base mb-2">PHP</p>
+            <hr class="text-white mb-2" />
+            <p class="text-white text-base mb-2">Hacking</p>
+            <hr class="text-white mb-2" />
+            <p class="text-white text-base mb-2">Python</p>
+            <hr class="text-white mb-2" />
+            <p class="text-white text-base mb-2">C++</p>
+            <hr class="text-white mb-2" />
+          </div>
+          <div
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 shadow-md rounded-tl-lg rounded-br-lg cursor-pointer"
+          >
+            Lihat Portofolio
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill" class="w-secreen mx-auto px-4 py-4 dasar">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-6/12 ml-auto m-auto mr-auto px-4 lg:w-6/12">
+          <img
+            src="../image/hack.jpg"
+            alt=""
+            class="max-w-full rounded-tl-lg rounded-br-lg shadow-lg"
+          />
+        </div>
+        <div class="w-full md:w-5/12 ml-auto mr-auto px-4 m-auto">
+          <div class="md:pr-4">
+            <h1 class="w-full my-2 text-5xl font-bold text-center text-white">
+              Skill Framework
+            </h1>
+            <div class="mb-4">
+              <div
+                class="h-1 mx-auto w-2/3 opacity-75 my-0 mx-0 rounded line"
+              ></div>
+            </div>
+            <p class="mt-4 text-lg text-white">
+              Berikut adalah item dan skala keahlian untuk framework :
+            </p>
+            <ul class="list-none mt-4">
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-white">Codeigniter</p>
+                <div class="gradientSkill w-7/8"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-white">Laravel</p>
+                <div class="gradientSkill w-3/4"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-white">Bootstrap</p>
+                <div class="gradientSkill w-2/3"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-white">Tailwindcss</p>
+                <div class="gradientSkill w-1/2"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-8 mx-auto px-8 dasar">
+      <div class="text-center mb-8">
+        <h1
+          id="recent"
+          class="w-full my-2 mt-4 font-bold text-5xl uppercase tracking-wide text-white"
+        >
+          projects experience
+        </h1>
+        <div class="mb-4">
+          <div
+            class="h-1 mx-auto line mt-3 w-2/3 md:w-1/6 opacity-75 my-0 py-0 rounded"
+          ></div>
+        </div>
+        <p class="text-lg m-4 text-white">list of projects that I completed</p>
+      </div>
+      <div class="grid grid-cols-1 m-auto sm:grid-cols-2 lg:grid-cols-4 m-8">
+        <div class="gradientSkill px-4 py-4 m-2 shadow-lg rounded">
+          <img
+            src="../image/gif.gif"
+            alt=""
+            class="w-full rounded-tl-lg rounded-br-lg"
+          />
+          <div class="px-2 py-2 text-center">
+            <p class="font-bold text-lg mb-2 capitalize text-white">
+              Application healthy
+            </p>
+            <p class="text-base text-white">
+              i'm a senior hacking in indonesian, and the best in the world
+              world world!!!
+            </p>
+          </div>
+          <div class="px-2 py-4 text-center">
+            <button
+              class="px-6 py-1 rounded-tl-lg rounded-br-lg text-white border border-white hover:border-transparent hover:text-white hover:bg-gray-900"
+            >
+              Detail
+            </button>
+          </div>
+        </div>
+
+        <div class="gradientSkill px-4 py-4 m-2 shadow-lg rounded">
+          <img
+            src="../image/gif2.gif"
+            alt=""
+            class="w-full rounded-tl-lg rounded-br-lg"
+          />
+          <div class="px-2 py-2 text-center">
+            <p class="font-bold text-lg mb-2 capitalize text-white">
+              learn Match web
+            </p>
+            <p class="text-base text-white">
+              i'm a senior hacking in indonesian, and the best in the world
+              world world!!!
+            </p>
+          </div>
+          <div class="px-2 py-4 text-center">
+            <button
+              class="px-6 py-1 rounded-tl-lg rounded-br-lg text-white border border-white hover:border-transparent hover:text-white hover:bg-gray-900"
+            >
+              Detail
+            </button>
+          </div>
+        </div>
+        <div class="gradientSkill px-4 py-4 m-2 shadow-lg rounded">
+          <img
+            src="../image/gif4.gif"
+            alt=""
+            class="w-full rounded-tl-lg rounded-br-lg"
+          />
+          <div class="px-2 py-2 text-center">
+            <p class="font-bold text-lg mb-2 capitalize text-white">
+              Planned events web
+            </p>
+            <p class="text-base text-white">
+              i'm a senior hacking in indonesian, and the best in the world
+              world world!!!
+            </p>
+          </div>
+          <div class="px-2 py-4 text-center">
+            <button
+              class="px-6 py-1 rounded-tl-lg rounded-br-lg text-white border border-white hover:border-transparent hover:text-white hover:bg-gray-900"
+            >
+              Detail
+            </button>
+          </div>
+        </div>
+        <div class="gradientSkill px-4 py-4 m-2 shadow-lg rounded">
+          <img
+            src="../image/gif3.gif"
+            alt=""
+            class="w-full rounded-tl-lg rounded-br-lg"
+          />
+          <div class="px-2 py-2 text-center">
+            <p class="font-bold text-lg mb-2 capitalize text-white">
+              game web practice
+            </p>
+            <p class="text-base text-white">
+              i'm a senior hacking in indonesian, and the best in the world
+              world world!!!
+            </p>
+          </div>
+          <div class="px-2 py-4 text-center">
+            <button
+              class="px-6 py-1 rounded-tl-lg rounded-br-lg text-white border border-white hover:border-transparent hover:text-white hover:bg-gray-900"
+            >
+              Detail
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="w-secreen mx-auto py-2 px-4 dasar pb-6">
+      <div class="font-bold text-center tracking-wide text-white text-5xl">
+        Contact us
+      </div>
+      <div class="h-1 line rounded w-1/5 m-auto mt-2 mb-4 my-0 py-0"></div>
+      <div
+        class="mt-2 p-4 rounded w-5/6 mb-4 m-auto md:w-2/4 bg-gray-200 text-white capitalize gradientSkill"
+      >
+        <form action="">
+          <label class="mb-4 pb-4">nama</label>
+          <input
+            type="text"
+            class="w-full mt-1 mb-2 rounded-tl-lg rounded-br-lg border-2 border-gray-400 bg-gray-900"
+            placeholder="masukkan nama"
+          />
+          <label  class="mb-4 pb-4">email</label>
+          <input
+            type="email"
+            class="w-full mt-1 mb-2 rounded-tl-lg rounded-br-lg border-2 border-gray-400 bg-gray-900"
+            placeholder="masukkan email"
+          />
+          <label class="mb-4 pb-4">Pesan</label>
+          <textarea
+            class="row-100 rows-4 w-full mt-1 mb-2 rounded-tl-lg rounded-br-lg border-2 border-gray-400 bg-gray-900"
+            id=""
+            placeholder="masukkan pesan"
+          ></textarea>
+        </form>
+        <button
+          class="px-8 py-2 m-auto capitalize flex bg-gray-900 hover:bg-gray-700 justify-center border-2 border-gray-400 rounded-tl-lg rounded-br-lg"
+        >
+          submit
+        </button>
+      </div>
+    </section>
+    <section class="w-secreen mx-auto py-4 px-4 bg-gray-900">
+      <div
+        class="text-center grid grid-cols-3 my-4 w-2/6 sm:grid-cols-6 m-auto w-2/6 text-gray-500 py-2 cursor-pointer"
+      >
+        <a
+          href="https://www.linkedin.com/in/yudaananda-webdev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-facebook fa-2x mx-4 my-2 hover:text-white">
+          </i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yudaananda-webdev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fa-brands fa-instagram fa-2x mx-4 my-2 hover:text-white"
+          ></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yudaananda-webdev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin fa-2x mx-4 my-2 hover:text-white"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yudaananda-webdev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-tiktok fa-2x mx-4 my-2 hover:text-white"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yudaananda-webdev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github fa-2x mx-4 my-2 hover:text-white"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yudaananda-webdev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-twitter fa-2x mx-4 my-2 hover:text-white"></i>
+        </a>
+      </div>
+      <p class="text-center text-white text-lg pb-2">
+        &#169;Yuda Ananda | Portofolio
+      </p>
+    </section>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
